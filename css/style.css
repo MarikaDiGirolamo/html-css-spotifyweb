@@ -2,6 +2,7 @@
     max-width: 1150px;
     margin: 0 auto;
 }
+/********** Aside-Navbar **********/
 
 .aside-navbar{
     width: 100%;
@@ -19,3 +20,22 @@ li{
 }
 
 .playlist h2{margin-bottom: 1.3rem;}
+
+/********** Navbar Upgrade **********/
+
+.navbar-upgrade{
+    height: 5.625rem;
+    width: calc(100% - 200px);
+}
+
+.navbar-upgrade{
+    position: relative;
+}
+.upgrade-btn{
+    position: absolute;
+    right: 1rem;
+    top: 25%;
+    bottom: 25%;
+    border: none;
+    border-radius: 30px;
+}
