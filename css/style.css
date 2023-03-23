@@ -317,18 +317,6 @@ ul#nav-light-menu li{
 }
 
 
-.img-hidden {
-    position: relative;
-    
-}
-
-
-.img-top:hover {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
 .red-hover:hover {
     color: red;    
 }
