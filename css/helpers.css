@@ -5,12 +5,39 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
-/********** COLORS PALETTE **********/
-:root{
-    --primary-col:   #000000;
-    --secondary-col: #f1f1f1;
-    --tertiary-col:  #141922;
+
+/* ROOT COLORS */ 
+
+/* Mi hanno condigliato di usarli e ho voluto provare. Ma magari ho solo fatto
+più macello del dovuto! E' solo una prova per vedere se sono in grado di gestirli */
+:root {
+    --upgrade-navbar: rgba(8,11,18,255);
+    --light-menu: rgba(20,25,34,255);
+    --spotify-navbar: rgba(0,0,0,255);
+    --music-bar: rgba(40,40,40,255);
+    --white: rgba(255,255,255,255);
+    --text-light-menu-icons: rgba(210,210,210,255);
+    --text-spotify-navbar: rgba(210,210,210,255);
+    --shadows: 
+
 }
+
+/* ROOT SIZES */
+
+:root {
+    /* Larghezze macro aree*/
+    --desktop-main-width: 1400px;
+    --desktop-spotify-navbar-width: 250px;
+    --desktop-upgrade-navbar-width: calc(100% - 250px);
+    --desktop-light-menu-width: calc(100% - 250px);
+    --desktop-music-bar-width: 100%;
+    /* Altezze macro aree*/
+    --desktop-spotify-navbar-height: calc(100% - 10vh);
+    --desktop-main-height: 100vh;
+    --desktop-upgrade-navbar-height: 10vh; 
+    --desktop-light-menu-height:90vh;
+}
+
 
 
 /********** BACKGROUND **********/
@@ -47,7 +74,8 @@
 /********** PADDING & MARGIN **********/
 .pad0   {padding: 5px 30px}
 .pad1   {padding: 1rem;}
-.pad1-2{ padding:1.1rem}
+.pad1-2 {padding-top: 1rem;
+    padding-left: 1.5rem;}
 .pad2   {padding: 2rem;}
 .pad3   {padding: 5rem;}
 .pad-x{
@@ -57,9 +85,9 @@
 
 .pad-top  {padding: 1rem 0;}
 
-.gap{gap: 2rem;}
+.gap      {gap: 2rem;}
 
-.margin1 {margin-top: 50px;}
+.margin1 {margin-top: 3rem}
 .margin2 {margin: 20px, 0px;}
 
 /********** COLUMN **********/
@@ -72,6 +100,9 @@
 .col50  {width: 50%;}
 .col60  {width: 60%;}
 .col65  {width: 65%;}
+
+
+.h100   {height: 100%;}
 
 .pointer    {cursor: pointer;}
 .border     {border: 2px dashed white;}
