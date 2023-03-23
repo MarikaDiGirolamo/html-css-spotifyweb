@@ -1,17 +1,34 @@
-/* Tablet */
-
-@media screen and (min-width: 769px) and (max-width:992px){
-    body.debug{background-color: violet;}
+/********* MEDIA QUERIES *********/
+/* Esempio preso da Luca */
+/* XS - MOBILE FIRST */
+body.debug {
+    background: red;
 }
 
-/* Desktop */
-
-@media screen and (min-width: 992px) and (max-width:1200px){
-    body.debug{background-color: purple;}
-    body.debug{background-color: pink;}
+/* SM - SMARTPHONE */
+@media screen and (min-width: 480px) {
+    body.debug {
+        background: orange;
+    }
 }
 
-/* Large Desktop */
-@media screen and (min-width: 1201px){
-    body.debug{background-color: crimson;}
+/* MD - TABLET */
+@media screen and (min-width: 768px) {
+    body.debug {
+        background: yellow;
+    }
+}
+
+/* LG - DESKTOP */
+@media screen and (min-width: 992px) {
+    body.debug {
+        background: yellowgreen;
+    }
+}
+
+/* XL - LARGE DESKTOP */
+@media screen and (min-width: 1201px) {
+    body.debug {
+        background: green;
+    }
 }
