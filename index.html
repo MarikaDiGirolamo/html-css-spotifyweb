@@ -4,94 +4,197 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/helpers.css">
         <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="./css/debug.css">
         <title>Spotify Clone</title>
+        <link rel="icon" href="./img/favicon.ico">
     </head>
     <body>
-        <header>
-            <!-- Navbar Upgrade -->
-            <div class="navbar-upgrade flex bg-black border"> <!--Background opacity, fixed-->
-                <div class="upgrade flex bg-gray">
-                    <button class="upgrade-btn text-black pad0">Effettua l'Upgrade</button>
-                </div>
-            </div>
-        </header>
 
         <main>
-            <!-- Aside Navbar & Logo -->
-            <div class="aside-navbar">
-                <section class="spotify-menu flex">
-                    <nav class="spotify-navbar flex flex-column bg-black border">
-                        <div class="navbar-top pad1-2">
-                            <div class="logo">
-                                <img src="./img/logo.svg" alt="spotify-logo">
-                            </div>
-                            <!-- Menu Icons -->
-                            <ul class="navbar-middle pad-top"> <!--Aggiungere icons e span-->
-                                <li class="text-white">Home</li>
-                                <li class="text-white">Search</li>
-                                <li class="text-white">Library</li>
-                            </ul>
-                            <!-- Playlist, ascoltati di recente -->
-                            <div class="playlist text-white"> <!--Aggiungere link e span-->
-                                <h2>Crea la tua playlist</h2>
-                                <ul>
-                                    <li>Nome Playlist</li>
-                                    <li>Nome Playlist</li>
-                                    <li>Nome Playlist</li>
-                                    <li>Nome Playlist</li>
-                                    <li>Nome Playlist</li>
-                                    <li>Nome Playlist</li>
-                                    <li>Nome Playlist</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Download App - border - User-->
-                        <div class="navbar-bottom pad1-2">
-                            <div class="download text-white">
-                                <span>Download App</span> <!--Dare border-bottom, inserire icon. Link?-->
-                            </div>
-                        </div>
-                        <div class="user text-white pad1-2">
-                            <span>John Doe</span> <!--Add immagine e link(?)-->
-                        </div>
-                    </nav>
-                    <!-- Light Menu -->
-                    <section class="spotify-body">
-                        <div class="spotify-light flex justify-center align-center text-center">
-                            <nav class="light-menu flex pad1"> <!--Customize-->
-                                <ul id="l-menu">
-                                    <li><a href="">In Evidenza</a></li>
-                                    <li><a href="">Podcast</a></li>
-                                    <li><a href="">Classifiche</a></li>
-                                    <li><a href="">Generi e Mood</a></li>
-                                    <li><a href="">Nuove Uscite</a></li>
-                                    <li><a href="">Scopri</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </section>
-                </section>
-            </div>        
-            
-            
+            <div class="upgrade-navbar flex flex-end align-center">
+                <a class="upgrade-a" href="">EFFETTUA L'UPGRADE</a>
+                <nav class="spotify-navbar">
+                    <img class="spotify-logo" src="./img/logo.svg" alt="spotify-logo">
 
+                    <!-- Menu Icons -->
+                    <div class="navbar-middle flex align-center">
+                        <ul >
+                            <li class="text-white"><i class="fa-solid fa-house"></i> Home</li>
+                            <li class="text-white"><i class="fa-solid fa-magnifying-glass"></i> Search</li>
+                            <li class="text-white"><i class="fa-solid fa-bookmark"></i> Library</li>
+                        </ul>
+                    </div>
+
+                    <!-- Playlist -->
+                    <section class="playlist-section">
+                    <h3 class="playlist-h3">PLAYLIST</h3>
+                    <div class="add-icon">
+                        <i class="fa-solid fa-square-plus"></i>
+                        <span class="text-spotify-menu">Crea playlist</span>
+                    </div>
+
+                    <ul class="playlist text-white">
+                        <li class="text-spotify-menu playlist-name">Nome Playlist</li>
+                        <li class="text-spotify-menu playlist-name">Nome Playlist</li>
+                        <li class="text-spotify-menu playlist-name">Nome Playlist</li>
+                        <li class="text-spotify-menu playlist-name">Nome Playlist</li>
+                        <li class="text-spotify-menu playlist-name">Nome Playlist</li>
+                        <li class="text-spotify-menu playlist-name">Nome Playlist</li>
+                    </ul>
+                </section>
+
+                    <div class="spotify-navbar-bottom margin1 flex flex-column flex-end">
+                        <div class="download-section flex align-center">
+                            <i class="down-icon fa-regular fa-circle-down"></i>
+                            <span class="text-spotify-menu down-app">Installa App</span>
+                        </div>
+                        <hr>
+                        <div class="user flex align-center">
+                            <i class="user-icon icon fa-regular fa-circle-user"></i>
+                            <span class="text-spotify-menu user-name">John Doe</span>
+                        </div>
+                    </div>    
+                </nav>    
+            </div>
             
-    
-            <!-- Recently Played -->
-            <!-- Created for -->
-            <!-- Most Popular Artists -->
+            <!-- Light Menu -->
+            <div class="light-menu">
+                <div class="navbar-light flex justify-center">
+                    <ul id="nav-light-menu" >
+                        <li><a href="#">IN EVIDENZA</a></li>
+                        <li><a href="#">PODCAST</a></li>
+                        <li><a href="#">CLASSIFICHE</a></li>
+                        <li><a href="#">GENERI E MOOD</a></li>
+                        <li><a href="#">NUOVE USCITE</a></li>
+                        <li><a href="#">SCOPRI</a></li>
+                    </ul>
+                </div>
+
+                <!-- Recently Played -->
+                <section class="album-section">
+                    <h2 class="wrapper-h2">Recently played</h2>
+                    <div class="wrapper flex wrap">
+                        <div class="album">
+                            <img src="./img/metal_lifting.jpg" alt="Heavy Metal">
+                            <h5 class="album-name">Heavy Metal</h5>
+                            <h6 class="album-author">Subtitle</h6>
+                        </div>
+
+                        <div class="album">
+                            <img src="./img/stranger.jpeg" alt="Stranger Things">
+                            <h5 class="album-name">Stranger Things Vol.1(a Netflix Original Series Soundtrack)</h5>
+                            <h6 class="album-author">Kyle Dixon & Michael Stein</h6>
+                        </div>
+
+                        <div class="album">
+                            <img src="./img/aquietplace.jpeg" alt="A Quiet Place">
+                            <h5 class="album-name">A Quiet Place</h5>
+                            <h6 class="album-author">Subtitle</h6>
+                        </div>
+
+                        <div class="album">
+                            <img src="./img/split.jpeg" alt="Split">
+                            <h5 class="album-name">Split</h5>
+                            <h6 class="album-author">Subtitle</h6>
+                        </div>
+
+                        <div class="album">
+                            <img src="./img/cure.jpeg" alt="SUbtitle">
+                            <h5 class="album-name">A Cure fo Wellness</h5>
+                            <h6 class="album-author">Subtitle</h6>
+                        </div>
+
+                        <div class="album">
+                            <img src="./img/sinister.jpeg" alt="Sinister">
+                            <h5 class="album-name">Sinister</h5>
+                            <h6 class="album-author">subtitle</h6>
+                        </div>
+
+                    </div>
+                </section> 
+                
+                
+                
+                <!-- Created for -->
+                <section class="music-section">
+                    <h2 class="wrapper-h2">Creato per John Doe<h2>
+                    <h3 class="wrapper-h3">Più ascolti, più accurati saranno i suggerimenti.</h3>
+                    <div class="wrapper flex wrap">
+                        <div class="album">
+                            <img src="./img/radar.jpeg" alt="Realese Radar">
+                            <h5 class="album-name">Release Radar</h5>
+
+                        </div>
+
+                        <div class="album">
+                            <img src="./img/mixdaily.jpeg" alt="Daily Mix">
+                            <h5 class="album-name">Mix Daily</h5>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Artisti più popolari -->
+
+                <section class="music-section">
+                    <h2 class="wrapper-h2">Artisti più popolari</h2>
+                    <h3 class="wrapper-h3">Più ascolti, più accurati saranno i suggerimenti</h3>
+                    <div class="wrapper flex wrap">
+                        <div class="album">
+                            <img class="pop-artist" src="./img/youg.jpeg" alt="Lana Del Rey">
+                            <i class="fa-regular fa-circle-play"></i>  
+
+                        </div>
+
+                        <div class="album">
+                            <img class="img-hover img-hidden artist pop-artist" src="./img/einaudi.jpeg" alt="Ludovico Einaudi">
+                            <i class="fa-regular fa-circle-play"></i>  
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Music Bar -->
+            <div class="music-bar flex justify-between">
+                <div class="now-playing-bar flex flex-start align-center">
+                    <img class="song-cover" src="./img/sinister.jpeg" alt="Sinister">
+                    <div class="data-song-author"> 
+                        <h4 class="title">Sinister</h4>
+                        <p><a class="author" href="">Brano Nome</a></p>
+                    </div>
+                    <div class="icon">
+                        <a href=""><i class="red-hover player-icon left-icon icon fa-regular fa-heart"></i></a>
+                        <a href=""><i class="player-icon left-icon icon far fa-folder"></i></a>
+                    </div>
+                    
+                </div>
+                <div class="player-btn flex">
+                    <div class="function-button">
+
+                        <a href=""><i class="player-icon center-icon icon fas fa-random"></i></a>
+                        <a href=""><i class="player-icon center-icon icon fas fa-step-backward"></i></a>
+                        <a href=""><i class="player-icon center-icon icon fas fa-play-circle"></i></a>
+                        <a href=""><i class="player-icon center-icon icon fas fa-step-forward"></i></a>
+                        <a href=""><i class="player-icon center-icon icon fas fa-redo"></i></a>
+                    </div>
+                    <div class="song-progress">
+                        <span>0:00</span><input class="progress-bar" type="range" name="time" id="range"><span>2:56</span>
+                    </div>
+                </div>
+                <div class="utility-icon flex flex-start align-center">
+                    <a href=""><i class="player-icon icon right-icon fas fa-list"></i></a>
+                    <a href=""><i class="player-icon icon right-icon fas fa-desktop"></i></a>
+                    <a href=""><i class="player-icon icon right-icon fas fa-volume-up"></i></a>
+                    <input class="volume progress-bar" type="range" name="range">
+                </div>
+            </div>
         </main>
 
-        <footer>
-            <!-- Music Bar -->
-            <!-- Now Playing - Music Icons + Time Bar -  Queue List, Device, Volume bar-->
-        </footer>
-    </body>
-</html>
+        </body>
+    </html>
