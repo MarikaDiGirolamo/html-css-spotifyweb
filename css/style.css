@@ -1,56 +1,336 @@
-.boxed{
-    max-width: 1150px;
-    margin: 0 auto;
-}
-/********** Aside-Navbar **********/
 
-.aside-navbar{
-    position: absolute;
+
+
+/* MAIN LAYOUT BOXES*/
+main {
+    max-width: var(--desktop-main-width);
+    height: var(--desktop-main-eight);
+    margin-inline: auto;
+}
+
+.upgrade-navbar {
+    background-color: var(--upgrade-navbar);
+    height: var(--desktop-upgrade-navbar-height); 
+    width: calc(100% - 250px);
+    position: fixed;
+    z-index: 1;
     top: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 100;
+    right: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
 }
 
-.spotify-navbar{
-    width: 200px;
-    height: 100%;
+.spotify-navbar {
+    background-color: var(--spotify-navbar);
+    width: var(--desktop-spotify-navbar-width);
+    height: var(--desktop-spotify-navbar-height);
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left:0;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
 }
 
-li{
+.upgrade-a {
+    margin-right: 2rem;
+    color: white;
+    background-color: rgba(8,11,18,255);
+    font-size: .9rem;
+    border-radius: 30px;
+    border: 1px solid rgba(210,210,210,255);
+    padding: .7rem 2rem;
+    text-decoration: none;
+}
+
+
+
+/* Menu Icons */
+.spotify-logo {
+    width: 170px;
+    padding-bottom: 2rem;
+}
+
+.navbar-middle {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: rgba(210,210,210,255);
+}
+
+.navbar-middle li{
     list-style: none;
     margin: 1em 0;
 }
-
-.playlist h2{margin-bottom: 1.3rem;}
-
-/********** Navbar Upgrade **********/
-
-.navbar-upgrade{
-    position: relative;
-    margin-left: 200px;
-    height: 5.625rem;
-    width: calc(100% - 200px);
+.navbar-middle i{
+    font-size: 1.5rem;
+    margin-right: 0.2rem;
 }
 
-.upgrade-btn{
-    position: absolute;
-    right: 1rem;
-    top: 25%;
-    bottom: 25%;
-    border: none;
-    border-radius: 30px;
+.text-spotify-menu {
+    font-size: 1.1rem;
+    margin-left: 1rem;
+    color: rgba(210,210,210,255);
 }
-/********** Light Menu **********/
 
-.spotify-body{
-    width: calc(100% - 200px);
+.playlist-h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.nav-light {
+    margin-top: 2rem;
+}
+
+.playlist-name {
+    list-style-type: none;
+    margin: .7rem 0;
+}
+
+.spotify-navbar-bottom{
     margin-top: 5rem;
-    background-color: lightgray;
 }
 
-ul#l-menu li{
+.down-app,
+.down-icon,
+.user-name {
+    margin-bottom: .5rem;
+}
+
+.down-icon,
+.user-icon {
+    color: white;
+    display: inline;
+}
+
+.user{
+    margin-top: .625rem;
+}
+.user,
+.download-section {
+    margin-left: 0;
+}
+
+/* Light-Menu */
+
+.light-menu {
+    padding-top: 10vh;
+    width: calc(100% - 250px);
+    background-color: var(--light-menu);
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
+
+}
+
+.navbar-light {
+    margin-top: 3rem;
+    margin-inline: auto;
+}
+
+.navbar-light li {
+    list-style: none;
+}
+
+ul#nav-light-menu li{
     display: inline;
     margin: 1rem;
 }
-.light-menu a{text-decoration: none;}
+
+.navbar-light a{
+    margin-inline: 1rem;
+    text-decoration: none;
+    font-size: .8rem;
+    color: var(--text-light-menu-icons);
+
+
+}
+
+/*Recently Played */
+
+.album-section {
+    margin-top: 3rem;
+    padding-inline: 3rem;
+}
+
+
+.wrapper {
+    margin-top: 3rem;
+	gap: 0.5rem;
+}
+
+.album	{
+	width: calc(100%  / 6);
+}
+
+.album img {
+    width: 100%;
+}
+
+.album-name,
+.album-author {
+    color: var(--text-light-menu-icons);
+    text-align: center;
+}
+
+.album-name {
+    margin-top: .5rem;
+    font-size: 0.8rem;
+}
+
+.album-author {
+    margin-top: .3rem;
+    font-size: .5rem;
+}
+/* Created for */
+.music-section{
+    padding: 3rem;
+    margin-right: 1rem;
+}
+
+.wrapper-h2 {
+    color: var(--text-light-menu-icons);
+}
+
+.wrapper-h3 {
+    margin-top: .5rem;
+    font-size: .8rem;
+    color: var(--text-spotify-navbar)
+}
+
+.wrapper-h2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* Artisti più popolari */
+.pop-artist{
+    border-radius: 50%;
+}
+
+/* Footer */
+
+/* Music Bar */
+    
+.music-bar {
+    background-color: var(--music-bar);
+    height: var(--desktop-upgrade-navbar-height); 
+    width: var(--desktop-music-bar-width);
+    position: fixed;
+    z-index: 3;
+    bottom: 0;
+    right: 0;
+    padding-inline: 2rem;
+}
+
+
+.author:hover,
+.title:hover,
+.function-icon:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+    
+.title,
+.author {
+    margin-inline: 1rem;
+    color: var(--text-light-menu-icons);
+    text-decoration: none;
+}
+
+
+.player-icon {
+    color: var(--white);
+}
+
+.now-playing,
+.utility-icon {
+    width: 20%;
+}
+
+.left-icon,
+.right-icon{
+    margin: 0 .5rem;
+}
+
+.data-song-author{
+    margin-right: .8rem;
+}
+
+.song-cover{
+    width: 50px;
+}
+
+
+.song-cover:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+.music-bar .player-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.center-icon
+{
+    margin: 0 .7rem;
+    font-size: 1.5rem;
+} 
+
+
+.song-progress #range {
+    width: 60%;
+    margin: .5rem 1rem;
+    vertical-align: middle;
+}
+
+.volume{
+    width: 40%;
+} 
+
+/* Hover & Active*/
+.navbar-middle:hover {
+    cursor: pointer;
+    color: var(--white);
+}
+
+.upgrade-a:hover {
+    background-color: var(--upgrade-navbar)
+}
+.upgrade-a:active{
+    transform: translateY(4px);
+    background-color: var(--upgrade-navbar);
+}
+
+
+.img-hidden {
+    position: relative;
+    
+}
+
+
+.img-top:hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.red-hover:hover {
+    color: red;    
+}
+
+.right-icon:hover {
+    transform: scale(2);
+}
